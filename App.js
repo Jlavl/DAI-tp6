@@ -9,7 +9,9 @@ export default function App() {
         <Text>Agregar nueva tarea!</Text>
       </Pressable>
       <View> style={styles.lista}
-        
+        <ul>
+          <text> eee</text>
+        </ul>
       </View>
     </View>
   );
@@ -25,6 +27,7 @@ const styles = StyleSheet.create({
   lista: {
     flex: 2,
     alignItems: 'flex-start',
+
 
   },
 });
