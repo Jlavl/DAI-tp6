@@ -1,15 +1,16 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Alert } from 'react-native';
-import { Button } from 'react-native-web';
+//import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View, Alert, Pressable } from 'react-native';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text> Este es un titulo.</Text>
-      <Button
-      title='presioname'
-      onPress={() => Alert.alert('Se ha presionado!')}
-      />
+      <Pressable onPress={Alert.alert}>
+        <Text>Agregar nueva tarea!</Text>
+      </Pressable>
+      <View> style={styles.lista}
+        
+      </View>
     </View>
   );
 }
@@ -20,5 +21,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center', 
     justifyContent: 'center',
+  },
+  lista: {
+    flex: 2,
+    alignItems: 'flex-start',
+
   },
 });
