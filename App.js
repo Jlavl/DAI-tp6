@@ -21,7 +21,8 @@ export default function App() {
             
             <Pressable
               style={[styles.boton, styles.botoncerrar]}
-              onPress={() => setModalVisible(!modalVisible)}>
+              onPress={() => setModalVisible(!modalVisible)}
+            >
               <Text style={styles.textStyle}>Cancelar nueva tarea</Text>
             </Pressable>
           </View>
