@@ -1,6 +1,6 @@
 //import { StatusBar } from 'expo-status-bar';
 import { useState } from 'react';
-import { StyleSheet, Text, View, Alert, Pressable, Modal } from 'react-native';
+import { StyleSheet, Text, View, Alert, Pressable, Modal, TextInput } from 'react-native';
 
 export default function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -18,12 +18,18 @@ export default function App() {
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
             <Text style={styles.modalText}>Tareas</Text>
-            
+              <div class="Agregarproyectosytareas">
+                <p class="titulo"> AGREGAR NUEVA TAREA </p>
+                <TextInput id="proyectoPadre" placeholder="Project to add task to*" size="30"/>
+                <TextInput id="nombretareaF" placeholder="Task Name*" size="30"/>
+                <Textinput id="desctareaF" placeholder="Task Description (Optional)" size="30"/>
+                <TextInput class="venctarea" size="30"/>
+              </div>
             <Pressable
               style={[styles.boton, styles.botoncerrar]}
               onPress={() => setModalVisible(!modalVisible)}
             >
-              <Text style={styles.textStyle}>Cancelar nueva tarea</Text>
+              <Text style={styles.textStyle}>Crear nueva tarea</Text>
             </Pressable>
           </View>
         </View>
