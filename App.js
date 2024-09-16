@@ -20,14 +20,14 @@ export default function App() {
             <Text style={styles.modalText}>Tareas</Text>
               <div class="Agregarproyectosytareas">
                 <p class="titulo"> AGREGAR NUEVA TAREA </p>
-                <TextInput id="proyectoPadre" placeholder="Project to add task to*" size="30"/>
-                <TextInput id="nombretareaF" placeholder="Task Name*" size="30"/>
-                <Textinput id="desctareaF" placeholder="Task Description (Optional)" size="30"/>
-                <TextInput class="venctarea" size="30"/>
+                <TextInput id="nombreTareaF" placeholder="Task Name*" size="30"/>
+                <Textinput id="descTareaF" placeholder="Task Description (Optional)" size="30"/>
+                <TextInput class="vencTarea" size="30"/>
+                
               </div>
             <Pressable
               style={[styles.boton, styles.botoncerrar]}
-              onPress={() => setModalVisible(!modalVisible)}
+              onPress={() => setModalVisible(!modalVisible)} 
             >
               <Text style={styles.textStyle}>Crear nueva tarea</Text>
             </Pressable>
